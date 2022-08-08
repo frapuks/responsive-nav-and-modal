@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nav et Modal</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="drop-menu">
+            <label for="drop-menu" class="toggle-menu">
+                <div class="hamburger-lines">
+                    <span class="line line-top"></span>
+                    <span class="line line-middle"></span>
+                    <span class="line line-bottom"></span>
+                </div>
+            </label>
+            
+            <ul class="menu">
+                <li class="li-level1"><a href="#"><img src="Logo.png" alt="logo" class="logo-hc">Dashboard</a></li>
+                <li class="li-level1"><a href="#"><img src="Logo.png" alt="logo" class="logo-hc">Achat ▾</a>
+                    <ul class="ul-level2">
+                        <li class="li-level2"><a href="#">Région 1</a></li>
+                        <li class="li-level2"><a href="#">Région 2</a></li>
+                        <li class="li-level2"><a href="#">Région 3</a></li>
+                    </ul>
+                </li>
+                <li class="li-level1"><a href="#"><img src="Logo.png" alt="logo" class="logo-hc">Gestion de projets ▾</a>
+                    <ul class="ul-level2">
+                        <li class="li-level2"><a href="#">Liste des projets</a></li>
+                    </ul>
+                </li>
+                <li class="li-level1"><a href="#"><img src="Logo.png" alt="logo" class="logo-hc">Réglages ▾</a>
+                    <ul class="ul-level2">
+                        <li class="li-level2"><a href="#">Mon compte</a></li>
+                        <li class="li-level2"><a href="#">Paramètres</a></li>
+                        <li class="li-level2"><a href="#">Se deconnecter</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <a href="#modal-container" class="delete">Supprimer</a>
+        <div id="modal-container">
+            <div class="modal">
+                <p>Êtes vous sûr de vouloir supprimer ce projet?</p>
+                <a href="#" class="modal-button modal-yes">Oui</a>
+                <a href="#" class="modal-button modal-no">Non</a>
+            </div>
+        </div>
+    </main>
+   
+
+</body>
+
+</html>
